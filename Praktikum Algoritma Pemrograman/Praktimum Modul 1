@@ -1,0 +1,55 @@
+#include <stdio.h>
+#define Phi 3.14
+
+int main(void)
+{
+  int pilihan;
+  char ulang;
+  float kll, r, luas;
+  do
+  {
+	  printf("\t\t\t============================================\n");
+	  printf("\t\t\tProgram Menghitung Keliling & Luas Lingkaran\n");
+	  printf("\t\t\t============================================\n\n");
+	  printf("\t\t\t\t1. Menghitung Keliling Lingkaran\n");
+	  printf("\t\t\t\t2. Menghitung Luas Lingkaran\n\n");
+ 
+    printf("\t\t\t\t\tPilihan anda: ");
+    scanf("%i",&pilihan);
+ 
+    switch(pilihan){
+    case 1:
+    	system("cls");
+        printf("\t\t\t=====Menghitung Keliling Lingkaran=====\n\n");
+        printf("\t\t\tMasukkan panjang jari-jari lingkaran: ");
+        	scanf("%f", &r);
+        kll = 2*Phi*r;
+        printf("\n\n\t\t\tKeliling lingkaran yang diperoleh adalah: %.2f", kll); 
+        
+        break;
+    case 2:
+        printf("Menghitung Luas Lingkaran \n");
+        system("cls");
+        printf("\t\t\t=====Menghitung Luas Lingkaran=====\n\n");
+        printf("\t\t\tMasukkan panjang jari-jari lingkaran: ");
+       		scanf("%f", &r);
+        luas = Phi*r*r;
+        printf("\n\n\t\t\tLuas lingkaran yang diperoleh adalah: %.2f", luas); 
+        
+        break;
+    default:
+        printf("Pilihan tidak tersedia \n");
+    }
+    printf("\n");
+    printf("\n\t\t\tIngin memilih mengulang ?\n");
+    printf("\n\t\t\tInput 't' jika tidak ?\n");
+    printf("\t\t\tInput >>"); 
+    scanf(" %c",&ulang);
+    system("cls");
+
+  }
+  while (ulang!= 't') ;
+  printf("\t\t\tTerimakasih... \n");
+ 
+  return 0;
+}
