@@ -1,5 +1,9 @@
+/*Ni Luh Eka Suryaningsih
+2108561096
+Kelas D */
+
 #include <stdio.h>
-#define Phi 3.14
+#define Phi 3.141592654
 
 int main(void)
 {
