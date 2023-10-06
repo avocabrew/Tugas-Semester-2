@@ -13,6 +13,7 @@ int main(void)
   do
   {
 	  printf("\t\t\t============================================\n");
+    printf("\t\t\t============================================\n");
 	  printf("\t\t\tProgram Menghitung Keliling & Luas Lingkaran\n");
 	  printf("\t\t\t============================================\n\n");
 	  printf("\t\t\t\t1. Menghitung Keliling Lingkaran\n");
